@@ -9,7 +9,7 @@
 ## Usage
 
 ```
-$ docker run -it -v /your/desired/output/dir:/output ryantk/minica --domains foo.dev
+$ docker run --user $(id -u):$(id -g) -it -v /your/desired/output/dir:/output ryantk/minica --domains foo.dev
 ```
 
 Then retreive your certificates:
